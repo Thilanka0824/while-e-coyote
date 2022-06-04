@@ -1,11 +1,11 @@
 const prompt = require('prompt-sync')({ sigint: true });
 
-let myString = "done"
+
 let num = prompt("Enter some numbers (type 'done' when complete): ")
 let sum = 0
 
-while (num !== myString) {
-    sum = sum + Number(num);
+while (num !== "done") {
+    sum = sum + Number(num); //sum += num;
     num = prompt("Another one: ");
 }
 console.log("The total is: " + sum)
